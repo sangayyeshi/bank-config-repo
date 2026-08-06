@@ -1,18 +1,15 @@
 server:
   port: 8082
 
-
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/account_db
-    username: root
-    password: Xangay@12
-
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-
 
 eureka:
   client:

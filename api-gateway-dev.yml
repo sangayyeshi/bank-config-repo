@@ -1,4 +1,4 @@
-server:
+oserver:
   port: 8080
 
 spring:
@@ -32,7 +32,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: http://eureka-service:8761/eureka/
 
 management:
   endpoints:
